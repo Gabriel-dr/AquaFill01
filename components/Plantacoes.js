@@ -132,12 +132,15 @@ const DATA = [];// carregaLista();
 <Button 
     title=""
     buttonStyle={styles.Botao}
+    onPress={() => navigation.navigate('Cadastro Plantas')}
     icon={
       <Icon
         name="add"
         type='material'
         size={20}
         color= '#ffffff'
+
+
         
                 />
     

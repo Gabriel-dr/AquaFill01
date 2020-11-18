@@ -95,5 +95,20 @@ export const styles = StyleSheet.create({
     title: {
       fontSize: 32,
     },
+    textin:{
+      backgroundColor: '#ffffff',
+        borderBottomColor: '#000000',
+        borderTopColor: '#000000',
+        borderWidth: 1,
+        marginBottom: 15
+      
+    },
+    TextoCadastro:{
+
+      fontStyle:"italic",
+      fontSize: 15
+
+
+    }
 
 });

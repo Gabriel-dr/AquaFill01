@@ -7,6 +7,7 @@ import { Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeScreen from './components/HomeScreen';
 import Plantacao from './components/Plantacoes';
+import CadastroPlanta from './components/CadastroPlanta';
 // import NotificationsScreen from './components/NotificationScreen';
 
 
@@ -38,6 +39,7 @@ export default function App() {
         <Drawer.Screen name="Entre em contato" component={HomeScreen}/>
         <Drawer.Screen name="Ajuda" component={HelpScreen} />
         <Drawer.Screen name="Sair" component={HomeScreen}/>
+        <Drawer.Screen name="Cadastro Plantas" component={CadastroPlanta}/>
         
       </Drawer.Navigator>
     </NavigationContainer>
