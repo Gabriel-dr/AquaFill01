@@ -8,19 +8,26 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeScreen from './components/HomeScreen';
 import Plantacao from './components/Plantacoes';
 import CadastroPlanta from './components/CadastroPlanta';
+import Login from './components/Login';
+import Registrar from './components/Registro';
+import Registro from './components/Registro';
 // import NotificationsScreen from './components/NotificationScreen';
+
 
 
 
 
 const Drawer = createDrawerNavigator();
 
+
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home" >
-        <Drawer.Screen name="Home" component={HomeScreen}  options={{
-          title: 'Home',
+     
+     
+      <Drawer.Navigator initialRouteName="Menu" >
+        <Drawer.Screen name="Menu" component={HomeScreen}  options={{
+          title: 'Menu',
           drawerIcon: ({focused, size}) => (
             <Icon
               name="home"
@@ -33,13 +40,15 @@ export default function App() {
  
         }} />
         
-        <Drawer.Screen name="Menu" component={HomeScreen} />
+        <Drawer.Screen name="login" component={Login} />
+       
         <Drawer.Screen name="Minhas Plantações" component={Plantacao}/>
         <Drawer.Screen name="Configurações do seu kit" component={HomeScreen}/>
         <Drawer.Screen name="Entre em contato" component={HomeScreen}/>
         <Drawer.Screen name="Ajuda" component={HelpScreen} />
         <Drawer.Screen name="Sair" component={HomeScreen}/>
         <Drawer.Screen name="Cadastro Plantas" component={CadastroPlanta}/>
+        <Drawer.Screen name="Cadastro" component={Registro}/>
         
       </Drawer.Navigator>
     </NavigationContainer>
